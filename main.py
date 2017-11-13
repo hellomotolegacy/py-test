@@ -7,10 +7,12 @@ def endl(a):
 #'Press enter to continue' prompt..
 def pause():
   enter = input("Press ENTER to continue")
+  #Stops a warning in my IDE.
+  enter = enter
   
 #Clear the screen
 def cls():
-  print("\n" * 100)
+  endl(100)
 
 #Enter your name and such..
 def introduction():
@@ -27,11 +29,12 @@ def introduction():
   cls()
   print("There is a loud buzzing as a sheet of paper is printed")
   print("out, black like the room. You wonder what else is there.")
+  endl(1)
   pause()
   cls()
   print("The paper finishes.")
   endl(1)
-  print("It reads, \"Hello,",name,"!\"")
+  print("It reads, \"Hello, "+ name + "!\"")
   pause()
   
   
